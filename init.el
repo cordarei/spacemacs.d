@@ -35,7 +35,7 @@ values."
             shell-default-position 'bottom)
      spell-checking
      syntax-checking
-     (typography :variables typography-enable-typographic-editing t)
+     typography
      version-control
      )
    ;; List of additional packages that will be installed without being
