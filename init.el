@@ -32,7 +32,9 @@ values."
      org
      scheme
      (shell :variables
+            shell-default-shell 'eshell
             shell-default-height 30
+            shell-default-term-shell "/usr/bin/fish"
             shell-default-position 'bottom)
      spell-checking
      syntax-checking
