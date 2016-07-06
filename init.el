@@ -31,6 +31,7 @@ values."
      c-c++
      git
      html
+     fossil
      markdown
      org
      python
