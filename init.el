@@ -23,10 +23,16 @@ values."
      better-defaults
      c-c++
      emacs-lisp
+     ;; eyebrowse
+     c-c++
      git
      haskell
+     html
+     fossil
      markdown
      org
+     python
+     racket
      scheme
      (shell :variables
             shell-default-shell 'eshell
@@ -112,7 +118,7 @@ values."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+                               :size 18
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -249,6 +255,20 @@ in `dotspacemacs/user-config'."
   "Configuration function for user code.
 This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
+
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '(
+     (clojure . t)
+     (emacs-lisp . t)
+     (gnuplot . t)
+     (python . t)
+     (sh . t)
+     )
+   )
+  (setq org-src-fontify-natively t)
+  (setq org-src-preserve-indentation t)
+
   )
 
 (setq custom-file (expand-file-name "custom.el" dotspacemacs-directory))
