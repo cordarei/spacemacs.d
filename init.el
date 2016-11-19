@@ -28,10 +28,12 @@ values."
      git
      haskell
      html
+     javascript
      fossil
      markdown
      org
      python
+     purescript
      racket
      scheme
      (shell :variables
@@ -42,7 +44,6 @@ values."
      spell-checking
      syntax-checking
      typography
-     unimpaired
      version-control
      vinegar
      yaml
