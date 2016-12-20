@@ -19,17 +19,17 @@ values."
    ;; of a list then all discovered layers will be installed.
    dotspacemacs-configuration-layers
    '(
+     agda
      auto-completion
      better-defaults
      c-c++
      emacs-lisp
-     ;; eyebrowse
      c-c++
      git
      haskell
      html
      javascript
-     fossil
+     ;; fossil
      markdown
      org
      python
